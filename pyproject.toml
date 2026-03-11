@@ -1,0 +1,15 @@
+[project]
+name = "get-message-records"
+version = "0.1.0"
+description = "CLI tool to query message_records from Supabase"
+requires-python = ">=3.12"
+dependencies = [
+    "supabase>=2.28.0",
+]
+
+[project.scripts]
+get-message-records = "get_message_records:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
